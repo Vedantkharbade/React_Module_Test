@@ -1,0 +1,28 @@
+.container {
+  width: 100%;
+  background: white;
+  border-radius: 6px;
+  box-shadow: 5px 5px 19px #a8a8a8, -5px -5px 19px #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem 0;
+  padding: 1rem;
+  position: relative;
+}
+
+.actual_note {
+  font-size: 1em;
+  word-break: break-all;
+}
+
+.date_time_area {
+  font-size: 0.8em;
+  display: flex;
+  gap: 0 1rem;
+  justify-content: flex-end;
+}
+
+.deleteIcon,
+.editIcon {
+  cursor: pointer;
+}

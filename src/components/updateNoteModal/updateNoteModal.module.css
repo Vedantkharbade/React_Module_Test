@@ -1,0 +1,56 @@
+.createNewGroup {
+  font-size: 20px;
+  margin: 0 0 1rem 0;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem 0;
+}
+
+.modal_input {
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+  justify-content: space-between;
+}
+
+.textContent {
+  width: 100%;
+  outline: none;
+  resize: none;
+  padding: 5px;
+}
+
+.modal_btn_div {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0 1rem;
+}
+
+.modalBtn {
+  background-color: var(--btn-blue);
+  color: white;
+  border-radius: 8px;
+  border: none;
+  padding: 0.3rem 2rem;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.modalBtnCancel {
+  color: var(--btn-blue);
+  border-radius: 8px;
+  border: 2px solid var(--btn-blue);
+  padding: 0.3rem 2rem;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+  font-size: 16px;
+  text-align: end;
+  margin: 0;
+}

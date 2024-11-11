@@ -1,0 +1,112 @@
+.container {
+  height: 100vh;
+  background-color: var(--bg-blue);
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.groupName {
+  display: flex;
+  align-items: center;
+  padding: 0 3rem;
+  background-color: var(--head-blue);
+  color: white;
+  justify-content: space-between;
+  height: 10%;
+}
+
+.groupContent {
+  display: flex;
+  align-items: center;
+  gap: 0 20px;
+}
+
+.deleteIcon {
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 720px) {
+  .backArrow {
+    display: none;
+  }
+}
+
+.img_circle {
+  width: 3em;
+  height: 3em;
+  /* background-color: green; */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.allNotes {
+  padding: 1rem 2rem;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem 0;
+  height: 65%;
+}
+@media only screen and (max-width: 720px) {
+  .allNotes {
+    gap: 1.5rem 0;
+    padding: 1rem;
+  }
+  .groupName {
+    padding: 0 1.5rem;
+  }
+}
+
+.allNotes::-webkit-scrollbar {
+  width: 10px;
+}
+
+.allNotes::-webkit-scrollbar-track {
+  background: rgb(181, 170, 170);
+}
+
+.allNotes::-webkit-scrollbar-thumb {
+  background-color: gray;
+}
+
+.message_container {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  width: -webkit-fill-available;
+  height: 25%;
+}
+
+.message {
+  width: 100%;
+  outline: none;
+  border: 1rem solid var(--head-blue);
+  resize: none;
+  padding: 1rem;
+  padding-right: 2rem;
+  position: relative;
+}
+
+.message::-webkit-scrollbar {
+  width: 10px;
+}
+
+.message::-webkit-scrollbar-track {
+  background: rgb(181, 170, 170);
+}
+
+.message::-webkit-scrollbar-thumb {
+  background-color: gray;
+}
+
+.sendIcon {
+  position: absolute;
+  right: 1.6rem;
+  bottom: 2rem;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
